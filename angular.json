@@ -24,7 +24,6 @@
           "builder": "@angular-devkit/build-angular:application",
           "options": {
             "outputPath": "dist/taller-angular",
-            "baseHref": "TallerAngular",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [

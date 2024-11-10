@@ -1,0 +1,30 @@
+.navbar {
+    background-color: #88b0d8;
+    color: white;
+    margin-left: 0;
+    margin-right: 0;
+}
+.navbar .container {
+    max-width: 95%; 
+    padding-left: 0;
+    padding-right: 0;
+}
+.navbar-brand {
+    font-size: 2rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+.navbar-brand img {
+    margin-right: 10px; 
+}
+
+.table-active {
+    background-color: #adadad !important;  
+}
+.table-bordered tr {
+    border-bottom: 1px solid #b3b0b0;
+}
+.table-bordered td, .table-bordered th {
+    border: none; 
+}

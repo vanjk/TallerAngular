@@ -11,13 +11,21 @@ import { SerieService } from '../serie.service';
 export class SerieListComponent implements OnInit {
 
   series: Array<Serie> = [];
-  
+
   constructor(private serieService: SerieService) {
   }
 
   getseries() :void {
     this.serieService.getSeries().subscribe(series => {
       this.series = series});
+  }
+
+  getPromedio(series: Serie[]): number{
+    let promedio = 0;
+    for (let i = 0; i < series.length; i++){
+      promedio += series[i].seasons;
+    }
+    return promedio/series.length;
   }
 
 

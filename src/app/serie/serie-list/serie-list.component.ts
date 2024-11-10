@@ -15,7 +15,7 @@ export class SerieListComponent implements OnInit {
   constructor(private serieService: SerieService) {
   }
 
-  getseries() {
+  getseries() :void {
     this.serieService.getSeries().subscribe(series => {
       this.series = series});
   }
